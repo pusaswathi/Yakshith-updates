@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="HintsSuite.xml">
+	<listeners>
+		<listener
+			class-name="org.hints.utility.GenerateReportsListener"></listener>
+	</listeners>
+	<test thread-count="5" name="Test">
+		<classes>
+
+
+
+
+
+
+
+			<!-- Smoke Tests For Manager Login -->
+			<class name="org.hints.testcases.PoojaBokingByManagerTest" />
+			<class name="org.hints.testcases.DonationByManagerTest" />
+			<class name="org.hints.testcases.LadduKaraByManagerTest" />
+			<class name="org.hints.testcases.QuickRegisterTest" />
+			<class name="org.hints.testcases.MatchingDonationsTest" />
+			<class name="org.hints.testcases.DonorAdvisoryFundsTest" />
+
+			<!-- Smoke Tests For Devotee Login -->
+			<class name="org.hints.testcases.LoginTest" />
+			<class name="org.hints.testcases.PoojaBookingTest" />
+			<class name="org.hints.testcases.HallBookingTest" />
+			<class name="org.hints.testcases.DonationTest" />
+			<class name="org.hints.testcases.LadduKarasevMenuTest" />
+			<class name="org.hints.testcases.HomePageTest" />
+
+
+
+
+		</classes>
+	</test> <!-- Test -->
+	<!-- <suite-files> <suite-file path="test-output/Suite/testng-failed.xml"/> 
+		</suite-files> -->
+</suite> <!-- All Test cases -->
